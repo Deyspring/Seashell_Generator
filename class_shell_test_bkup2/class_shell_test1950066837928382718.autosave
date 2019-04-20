@@ -1,0 +1,67 @@
+import math
+
+# 3/22 this was the last file worked on
+
+class Shell: 
+
+    def __init__(self, i, D, alpha_, beta, phi, mu, omega, A, a, b, L, P, W1, W2, N, n, m, turns, s ):
+        self.i = i
+        self.D = D
+        self.alpha_ = alpha_
+        self.beta = beta
+        self.phi = phi 
+        self.mu = mu
+        self.omega = omega
+        self.A = A
+        self.a = a
+        self.b = b
+        self.L = L 
+        self.P = P
+        self.W1 = W1
+        self.W2 = W2
+        self.N = N 
+        self.n = n
+        self.m = m
+        self.turns = turns
+        self.s = s
+    
+    def test_class(self):
+        print("hello")
+        print (self.i)
+
+def BoatEarMoonPresets():
+    #Variables for the creation of a Boat Ear Moon Shell
+    # Boat ear moon presets
+    i = 1
+    D=1
+    alpha_=math.radians(83)
+    beta=math.radians(42) 
+    phi=math.radians(70) 
+    mu=math.radians(10) 
+    omega=math.radians(30) 
+    A=25 
+    a=12 
+    b=20 
+    L=0 
+    P=0 
+    W1=0 
+    W2=0 
+    N=0 
+    # variables to set the resolution of the shell mesh 
+    n = 40 # Increasing n,m does not make the shell bigger but does increase the resolution of the spirals 
+    m = 40
+    turns = 10
+    s= 0
+    #print (n,m,turns,s,i,D,alpha_, beta,phi, mu, omega, A, a, b, L, P, W1, W2, N)
+    return i,D,alpha_, beta,phi, mu, omega, A, a, b, L, P, W1, W2, N, n,m,turns,s,
+
+
+#presets = BoatEarMoonPresets()
+#print (presets) 
+
+#p1 = Shell(presets)
+
+p1 = Shell(1, 1, 1.4486232791552935, 0.7330382858376184, 1.2217304763960306, 0.17453292519943295, 
+           0.5235987755982988, 25, 12, 20, 0, 0, 0, 0, 0, 40, 40, 10, 0)
+
+p1.test_class()

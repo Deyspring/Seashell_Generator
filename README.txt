@@ -1,0 +1,2 @@
+3/14 Currently trying to get a point cloud to work to troubleshoot the shell. 
+3/18 Got point cloud working, had a spiral and one offset oval working, but forgot to save the working version and broke it by going on to next step of generating an oval per spiral. 

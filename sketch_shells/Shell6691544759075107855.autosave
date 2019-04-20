@@ -1,0 +1,8 @@
+# Generate the shell mesh from passed variables
+
+def generateShell(n,m):
+
+	""" Adjust resolution of mesh for number of shell turns """
+	n = int( n * turns / 10.0) # turns function or variable location? 
+	spiral = new PVector[n] # Pvector: class describing a two or three dimensional vector with magnetude and dire
+	shell = new PVector[n][m]
